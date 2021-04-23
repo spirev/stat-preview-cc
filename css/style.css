@@ -15,6 +15,16 @@ main{
     color: hsl(0, 0%, 100%);
 }
 
+article:first-child{
+    background-image: url("../images/image-header-mobile.jpg");
+    background-size: contain;
+    width: 100%;
+    height: 30%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 5%;
+}
+
 article:nth-child(2){
     width: 85%;
     height: 67%;
@@ -39,9 +49,8 @@ img{
 
 div{
     position: relative;
-    top: -100%;
     width: 100%;
-    height: 93.5%;
+    height: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     background-color: rgba(101, 0, 160, 0.568);
@@ -67,7 +76,7 @@ p{
 }
 
 p:not(.stats-heading){
-    line-height: 24px;
+    line-height: 25px;
     margin-top: 0;
 }
 
@@ -79,13 +88,27 @@ p:not(.stats-heading){
     letter-spacing: 1px;
 }
 
-/*
-    - font-weight 400 et 700 pour font 'Inter'
-    - trouver quels textes prend 'Lexend deca' comme font et l'appliquer (weight 400)
-    - revoir les dimensions du main
+/* @media screen and (min-width: 375px) {
+    main{
+        width: 80%;
+        height: fit-content;
+        flex-flow: row;
+        flex-direction: row-reverse;
+    }
 
-    /!\ peut etre que l'image 'mobile' n'est qu'un screenshot et que le main doit couvrir 100% de la page ? !!!
+    article{
+        height: 50%;
+    }
 
-    - faire la partie desktop
+    article:first-child{
+        background-image: url("../images/image-header-desktop.jpg");
+    }
 
-*/
+    article:nth-child(2){
+        width: 50%;
+    }
+
+    img{
+        width: 100%;
+    }
+} */
